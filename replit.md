@@ -1,45 +1,48 @@
-# [Project name]
+# Mega Pack STL
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Página de vendas para o Mega Pack STL — o maior pacote de arquivos STL para impressão 3D do Brasil, com +90.000 modelos prontos para imprimir e vender.
 
 ## Run & Operate
 
+- `pnpm --filter @workspace/mega-pack-stl run dev` — run the landing page (port assigned by workflow)
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Frontend: React + Vite + Tailwind CSS v4
+- Animations: Framer Motion
+- Icons: Lucide React
+- UI Components: shadcn/ui (Radix UI)
+- API: Express 5 (api-server artifact)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
-
-## Architecture decisions
-
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- `artifacts/mega-pack-stl/src/pages/LandingPage.tsx` — main sales page component
+- `artifacts/mega-pack-stl/src/App.tsx` — router
+- `artifacts/mega-pack-stl/src/index.css` — theme/CSS variables
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Landing page de vendas para o Mega Pack STL:
+- Hero com VSL (vídeo Vimeo)
+- Seção de dores e benefícios
+- Carrossel de categorias de produtos
+- Tabela de comparação (com/sem o pack)
+- 11 módulos bônus exclusivos
+- Depoimentos de clientes
+- Tabela de preços (Básico R$10 / Premium R$29,90)
+- FAQ com accordion
+- Rodapé com contato
+
+## Checkout URLs
+
+- Pacote Básico: https://checkout.educafacl.shop/VCCL1O8SCNEQ
+- Pacote Premium: https://checkout.educafacl.shop/VCCL1O8SCNER
+- Upsell Upgrade: https://checkout.educafacl.shop/VCCL1O8SCNF7
 
 ## User preferences
 
 _Populate as you build — explicit user instructions worth remembering across sessions._
-
-## Gotchas
-
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details

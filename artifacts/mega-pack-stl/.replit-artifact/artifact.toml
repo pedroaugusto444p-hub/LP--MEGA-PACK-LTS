@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Mega Pack STL"
+version = "1.0.0"
+id = "artifacts/mega-pack-stl"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23482
+
+[services.development]
+run = "pnpm --filter @workspace/mega-pack-stl run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mega-pack-stl", "run", "build" ]
+publicDir = "artifacts/mega-pack-stl/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23482"
+BASE_PATH = "/"
