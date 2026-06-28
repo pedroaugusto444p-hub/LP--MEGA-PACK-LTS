@@ -324,7 +324,7 @@ export default function LandingPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
               <h3 className="text-base sm:text-lg font-black mb-6 text-slate-500 flex items-center gap-2">
                 <span>❌</span> SEM O NOSSO MEGA PACK STL
