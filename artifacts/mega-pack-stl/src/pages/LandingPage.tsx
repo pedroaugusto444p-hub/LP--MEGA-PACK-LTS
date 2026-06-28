@@ -708,7 +708,7 @@ export default function LandingPage() {
           <div className="p-5 sm:p-6">
             <DialogHeader>
               <DialogDescription className="text-sm sm:text-base font-medium text-slate-700 mb-5 text-center leading-relaxed">
-                Por apenas <span className="font-black text-slate-950">R$ 29,90</span>, você leva o{" "}
+                Por apenas <span className="font-black text-slate-950">R$ 14,90</span>, você leva o{" "}
                 <span className="text-orange-600 font-black">PACOTE PREMIUM completo</span> com mais de 90.000 STL e recebe{" "}
                 <span className="font-black">TODOS os bônus exclusivos</span>.
               </DialogDescription>
@@ -727,8 +727,8 @@ export default function LandingPage() {
               <Button onClick={() => handlePurchase("Oferta Especial Upgrade")} className="w-full h-12 text-sm sm:text-base font-black uppercase bg-emerald-500 hover:bg-emerald-600 text-white">
                 Quero essa oferta premium
               </Button>
-              <Button onClick={confirmBasicOnly} variant="ghost" className="w-full text-slate-400 hover:text-slate-600 text-xs font-medium h-auto py-1.5">
-                Não, quero apenas a oferta de R$ 10,00 reais
+              <Button onClick={confirmBasicOnly} variant="ghost" className="w-full text-slate-400 hover:text-slate-600 text-xs font-black uppercase h-auto py-1.5">
+                QUERO OFERTA DE 10
               </Button>
             </div>
           </div>
