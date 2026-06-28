@@ -86,12 +86,12 @@ export default function LandingPage() {
 
   const handlePurchase = (productName: string) => {
     if (productName === "PACOTE BÁSICO") setShowUpsell(true);
-    else if (productName === "PACOTE PREMIUM") window.location.href = "https://checkout.educafacl.shop/VCCL1O8SCNER";
-    else if (productName === "Oferta Especial Upgrade") window.location.href = "https://checkout.educafacl.shop/VCCL1O8SCNF7";
+    else if (productName === "PACOTE PREMIUM") window.location.href = "https://pay.wiapy.com/-VyI-5ZjuiG";
+    else if (productName === "Oferta Especial Upgrade") window.location.href = "https://pay.wiapy.com/dIV7VuWCBFI";
     else window.location.href = "https://checkout.educafacl.shop/VCCL1O8SCNEQ";
   };
 
-  const confirmBasicOnly = () => { setShowUpsell(false); window.location.href = "https://checkout.educafacl.shop/VCCL1O8SCNEQ"; };
+  const confirmBasicOnly = () => { setShowUpsell(false); window.location.href = "https://pay.wiapy.com/Ryh3dZFhPo5"; };
   const prevSlide = () => setCurrentSlide(p => (p === 0 ? carouselItems.length - 1 : p - 1));
   const nextSlide = () => setCurrentSlide(p => (p + 1) % carouselItems.length);
 
