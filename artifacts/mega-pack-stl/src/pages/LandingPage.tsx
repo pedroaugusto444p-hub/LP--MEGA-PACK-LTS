@@ -346,7 +346,7 @@ export default function LandingPage() {
             </div>
 
             <div className="bg-slate-950 border-2 border-orange-500 rounded-2xl p-6 sm:p-8 shadow-xl shadow-orange-500/10 text-white relative">
-              <div className="absolute -top-4 right-6 bg-orange-500 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg whitespace-nowrap">
                 Sua Melhor Escolha
               </div>
               <h3 className="text-base sm:text-lg font-black mb-6 text-orange-400 flex items-center gap-2 pt-2">
